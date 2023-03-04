@@ -1,0 +1,72 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="" routerLink="['/']">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Starship</li>
+    </ol>
+  </nav>
+<div [hidden]="!starship">
+    <h2>{{ starship.name }}</h2>
+    <ol class="list-group" >
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Model</div>
+            {{ starship.model }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Cargo capacity</div>
+            {{ starship.cargo_capacity }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Consumables</div>
+            {{ starship.consumables }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Cost in credits</div>
+            {{ starship.cost_in_credits }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Crew</div>
+            {{ starship.crew }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Length</div>
+            {{ starship.length }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Manufacturer</div>
+            {{ starship.manufacturer }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Max atmosphering speed</div>
+            {{ starship.cargo_capacity }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Passengers</div>
+            {{ starship.passengers }}
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Vehicle class</div>
+            {{ starship.vehicle_class }}
+            </div>
+        </li>
+    </ol> 
+</div> 
+

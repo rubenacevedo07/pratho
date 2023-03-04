@@ -1,0 +1,29 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+<div class="row">
+    <div class="col-8">
+        <h2>Starships table</h2>
+    </div>
+    <div class="col-4">
+        <div class="form-group">
+            <input type="search" class="form-control" [(ngModel)]="filter" placeholder="Filter by name">
+        </div>
+    </div>
+</div>
+
+
+<table class="table table-striped" [hidden]="!starships">
+<thead>
+    <th class="p-1" scope="col" sortable="name">Name</th>
+    <th class="p-1" scope="col" sortable="model">Model</th>
+</thead>
+<tbody>
+    <tr *ngFor="let st of (starships | starshipsFilter:filter)" >
+    <td><a routerLink="/starship" [queryParams]="{url: st.url}">{{ st.name }}</a></td>
+    <td>{{ st.model }}</td>
+    </tr>
+</tbody>
+</table>
